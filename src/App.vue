@@ -16,5 +16,6 @@ export default {
 </script>
 
 <style>
-
+  @import url(./styles/normalize.css);
+  @import url(./styles/fonts.css);
 </style>
