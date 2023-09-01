@@ -13,8 +13,8 @@
         <img class="node_userpicFile" :src="familyImg[`${userpic}`]">
       </div>
       <div class="node_titles">
-        <p class="title">{{ name }}</p>
-        <p class="subtitle">{{ birth }}</p>
+        <p class="title" :class="{ 'title_selected': selected }">{{ name }}</p>
+        <p class="subtitle" :class="{ 'subtitle_selected': selected }">{{ birth }}</p>
       </div>
     </div>
   </div>
@@ -116,13 +116,13 @@ export default {
 }
 
 .title {
-
-
   color: #011761;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  padding: 0;
+  margin: 0;
 }
 
 .subtitle {
@@ -131,6 +131,16 @@ export default {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  padding: 0;
+  margin: 0;
+}
+
+.title_selected {
+  color: #FFF;
+}
+
+.subtitle_selected {
+  color: #FFF;
 }
 
 .node_button {

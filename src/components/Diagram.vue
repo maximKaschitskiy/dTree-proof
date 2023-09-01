@@ -7,7 +7,7 @@ import Vue from "vue";
 import * as d3 from "d3";
 window.d3 = d3;
 import lodash from "lodash";
-import dTree from "../libs/d3-dtree/src/dtree.js";
+import dTree from "d3-dtree";
 import TreeNode from "./TreeNode.vue";
 import { familyData } from "../mock/familyData.js";
 
@@ -71,20 +71,6 @@ export default {
 </script>
 
 <style>
-body {
-  font: 10px sans-serif;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-svg {
-  border-style: solid;
-  border-width: 1px;
-}
-
 .tree {
   display: flex;
   width: 100%;
