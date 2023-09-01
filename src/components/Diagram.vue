@@ -7,7 +7,7 @@ import Vue from "vue";
 import * as d3 from "d3";
 window.d3 = d3;
 import lodash from "lodash";
-import dTree from "d3-dtree";
+import dTree from "../libs/d3-dtree/src/dtree.js";
 import TreeNode from "./TreeNode.vue";
 import { familyData } from "../mock/familyData.js";
 
@@ -25,13 +25,9 @@ export default {
         height: 800,
         width: 1000,
         nodeWidth: 330,
+        hSpacing: 590,
+        vSpacing: 150,
         callbacks: {
-          // nodeSize: (nodes, width, textRenderer) => {
-          //   return 330;
-          // },
-          // marriageSize: (nodes, size) => {
-          //   return 100;
-          // },
           nodeRenderer: (
             name,
             x,
