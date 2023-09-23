@@ -16,8 +16,3 @@ export const familyImg = {
       "woman bl": require("../assets/family/woman bl.svg"),
       "woman wh": require("../assets/family/woman wh.svg")
   }  
-  
-  
-  
-  
-  

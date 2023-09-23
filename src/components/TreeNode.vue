@@ -10,7 +10,8 @@
     </div>
     <div class="node_content">
       <div class="node_userpic">
-        <img class="node_userpicFile" :src="familyImg[`${userpic}`]">
+        <img class="node_userpicFile" :src=userpic>
+        <!-- <img class="node_userpicFile" :src="familyImg[`${userpic}`]"> -->
       </div>
       <div class="node_titles">
         <p class="title" :class="{ 'title_selected': selected }">{{ name }}</p>

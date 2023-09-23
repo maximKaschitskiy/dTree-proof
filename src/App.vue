@@ -18,4 +18,12 @@ export default {
 <style>
   @import url(./styles/normalize.css);
   @import url(./styles/fonts.css);
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  #app {
+    width: 100%;
+    height: 100%;
+  }
 </style>
